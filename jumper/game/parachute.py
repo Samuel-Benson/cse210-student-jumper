@@ -16,6 +16,13 @@ class Parachute():
 
     def cut(self):
         # makes parachute lose one piece at top
+        chute[0] = ""
+        if chute[0] = "":
+            chute[1] = ""
+        elif chute[0] and chute [1] = "":
+            chute[2] = ""
+        elif chute[0] and chute [1] and chute[2] = "":
+            chute[3] = ""
         pass
 
     def generate_output(self):
