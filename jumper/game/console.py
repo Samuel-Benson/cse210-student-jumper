@@ -32,3 +32,4 @@ class Console:
     
     def draw_parachute(self, parachute):
         # output parachute based on how parachute is formatted
+        pass
