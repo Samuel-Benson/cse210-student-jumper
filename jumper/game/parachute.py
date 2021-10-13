@@ -1,28 +1,28 @@
 class Parachute():
 
     def __init__(self):
-        chute = ["  ___  "," /___\\ "," \\   / ","  \\ /","   0   ","  /|\\   ","  / \\   ","^^^^^^^"]
-        print(chute[0])
-        print(chute[1])
-        print(chute[2])
-        print(chute[3])
-        print(chute[4])
-        print(chute[5])
-        print(chute[6])
-        print(chute[7])
+        self.chute = ["  ___  "," /___\\ "," \\   / ","  \\ /","   0   ","  /|\\   ","  / \\   ","^^^^^^^"]
+        print(self.chute[0])
+        print(self.chute[1])
+        print(self.chute[2])
+        print(self.chute[3])
+        print(self.chute[4])
+        print(self.chute[5])
+        print(self.chute[6])
+        print(self.chute[7])
         # Change these print statements into a parachute attribute. (a list)
         return
-    display_chute()
+    #display_chute()
 
     def cut(self):
         # makes parachute lose one piece at top
-        chute[0] = ""
-        if chute[0] = "":
-            chute[1] = ""
-        elif chute[0] and chute [1] = "":
-            chute[2] = ""
-        elif chute[0] and chute [1] and chute[2] = "":
-            chute[3] = ""
+        self.chute[0] = ""
+        if self.chute[0] == "":
+            self.chute[1] = ""
+        elif self.chute[0] and self.chute [1] == "":
+            self.chute[2] = ""
+        elif self.chute[0] and self.chute [1] and self.chute[2] == "":
+            self.chute[3] = ""
         pass
 
     def generate_output(self):
