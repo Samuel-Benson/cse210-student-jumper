@@ -36,3 +36,4 @@ root                    (project root folder)
 ---
 * TODO: Add your names and emails here
 Benjamin Heydorn bheydorn@byui.edu
+Samuel Benson ben20029@byui.edu
