@@ -1,6 +1,6 @@
 class Console:
     """A code template for a computer console. The responsibility of this 
-    class of objects is to get text or numerical input and display text output.
+    class of objects is to get text input and display text output.
     
     Stereotype:
         Service Provider, Interfacer
@@ -29,7 +29,3 @@ class Console:
             text (string): The text to display.
         """
         print(text)
-    
-    def draw_parachute(self, parachute):
-        # output parachute based on how parachute is formatted
-        pass

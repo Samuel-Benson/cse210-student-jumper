@@ -12,10 +12,15 @@ class Parachute():
         print(chute[7])
         # Change these print statements into a parachute attribute. (a list)
         return
-    display_chute()
 
     def cut(self):
         # makes parachute lose one piece at top
+        # SPECIAL CASE: When the last parachute piece is cut, change the stick man's
+        # head from a zero ( "   0   " ) to an x ( "   x   " )
+        pass
+
+    def is_game_over(self):
+        # Return true if the parachute is dead, false it is is not
         pass
 
     def generate_output(self):
