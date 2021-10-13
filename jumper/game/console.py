@@ -19,7 +19,7 @@ class Console:
         Returns:
             string: The user's input as text.
         """
-        return input(prompt)
+        return input(prompt).lower()
         
     def write(self, text):
         """Displays the given text on the screen. 
