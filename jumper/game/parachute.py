@@ -2,14 +2,6 @@ class Parachute():
 
     def __init__(self):
         self.chute = ["  ___  "," /___\\ "," \\   / ","  \\ /","   0   ","  /|\\   ","  / \\   ","^^^^^^^"]
-        print(self.chute[0])
-        print(self.chute[1])
-        print(self.chute[2])
-        print(self.chute[3])
-        print(self.chute[4])
-        print(self.chute[5])
-        print(self.chute[6])
-        print(self.chute[7])
         # Change these print statements into a parachute attribute. (a list)
         return
 
