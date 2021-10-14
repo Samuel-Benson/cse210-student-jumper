@@ -11,10 +11,11 @@ class Director:
 
     Attributes:
         console (Console): An instance of the class of objects known as Console.
-        gameover (boolean): Whether or not the game can continue.
+        gameover (Boolean): Whether or not the game can continue.
         parachute (Parachute): An instance of the class of objects known as Parachute.
         word (Word): An instance of the class of objects known as Word.
         letter_guess (Char): The letter input from the console class object. 
+        game_won(Boolean): Whether the word has been completely guessed.
     """
     def __init__(self):
         """The class constructor.
@@ -27,6 +28,7 @@ class Director:
         self.word = Word()
         self.gameover = False
         self.letter_guess = ''
+        self.game_won = False
     
     def start_game(self):
         """Starts the game loop to control the sequence of play.
@@ -38,6 +40,10 @@ class Director:
             self.do_outputs()
             self.get_inputs()
             self.do_updates()
+        if self.game_won:
+            print("You're winner!")
+        else:
+            print("Oh no. you did not win.")
 
     def do_outputs(self):
         """Outputs the important game information for each round of play. In 
@@ -75,3 +81,6 @@ class Director:
         if not guessed_correctly:
             self.parachute.cut()
             self.gameover = self.parachute.is_game_over()
+        if self.word.word_guessed():
+            self.gameover = True
+            self.game_won = True
