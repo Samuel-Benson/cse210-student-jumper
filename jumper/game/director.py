@@ -41,9 +41,9 @@ class Director:
             self.get_inputs()
             self.do_updates()
         if self.game_won:
-            print("You're winner!")
+            self.console.write("You're winner!")
         else:
-            print("Oh no. you did not win.")
+            self.console.write("Oh no. you did not win.")
 
     def do_outputs(self):
         """Outputs the important game information for each round of play. In 
