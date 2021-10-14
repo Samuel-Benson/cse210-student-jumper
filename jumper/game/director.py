@@ -47,7 +47,7 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        word_output = self.word.generate_output()
+        word_output = self.word.get_word_display()
         self.console.write(word_output)
         parachute_output = self.parachute.generate_output()
         self.console.write(parachute_output)
@@ -71,7 +71,7 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        guessed_correctly = self.word.verify_guess(self.letter_guess)
+        guessed_correctly = self.word.check_guess(self.letter_guess)
         if not guessed_correctly:
             self.parachute.cut()
             self.gameover = self.parachute.is_game_over()
