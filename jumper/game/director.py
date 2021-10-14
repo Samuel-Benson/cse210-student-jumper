@@ -72,7 +72,8 @@ class Director:
     def do_updates(self):
         """Updates the important game information for each round of play. In 
         this case, that means the word checks if the user guess is correct or not,
-        and the parachute reacts to that result.
+        and the parachute reacts to that result. If the word is completely guessed,
+        this is recognized as well and the win conditions are set.
 
         Args:
             self (Director): An instance of Director.
