@@ -12,15 +12,15 @@ class Parachute():
         chute.pop(0)
         if chute.pop(0) == "   0   ":
             chute[0] = "   X   "
-        pass
+        return
 
     def is_game_over(self):
         # Return true if the parachute is dead, false it is is not
         if chute[0] == "   X   ":
             return True
-        pass
+        return
 
     def generate_output(self):
         # return a string of the parachute to be printed
         chute = "  ___  \n /___\\ \n \\   / \n  \\ /\n   0   \n  /|\\   \n  / \\   \n^^^^^^^"
-        pass
+        return chute
