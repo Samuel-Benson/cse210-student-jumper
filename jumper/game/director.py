@@ -40,6 +40,7 @@ class Director:
             self.do_outputs()
             self.get_inputs()
             self.do_updates()
+        self.do_outputs()
         if self.game_won:
             self.console.write("You're winner!")
         else:

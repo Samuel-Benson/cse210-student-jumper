@@ -31,12 +31,13 @@ class Word:
         """
         string = ""
         for x in range(len(self.secret_word)):
-            if self.secret_word[x] == any in self.discovered_letters:
+            if self.secret_word[x] in self.discovered_letters:
                 string += self.secret_word[x]
             else:
                 string += "_"
             if x != len(self.secret_word):
                 string += " "
+        return string
 
     def check_guess(self, guess):
         """Checks if a guess matches any of the letters in the word.
@@ -45,7 +46,7 @@ class Word:
             self (Word): an instance of Word.
             guess (string): the letter being presented as the guess.
         """
-        if guess == any in self.secret_word:
+        if guess in self.secret_word:
             self.discovered_letters.append(guess)
             return True
         return False
@@ -57,6 +58,6 @@ class Word:
             self (Word): an instance of Word.
         """
         for x in range(len(self.secret_word)):
-            if self.secret_word[x] != any in self.discovered_letters:
+            if self.secret_word[x] not in self.discovered_letters:
                 return False
         return True
