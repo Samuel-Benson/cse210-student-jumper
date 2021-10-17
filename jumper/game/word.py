@@ -19,7 +19,7 @@ class Word:
         Args:
             self (Word): an instance of Word.
         """
-        self.word_list = ["word"]
+        self.word_list = ["word", "same", "hot", "abstract", "bread", "strange", "miniscule", "absquatulate", "defenestrate", "intense", "unaware"]
         self.secret_word = random.choice(self.word_list)
         self.discovered_letters = []
 
